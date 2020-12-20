@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>江安校区出行指难</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      loadSidebar: 'SUMMARY.md',
+      name: '江安校区出行指难',
+      namelink: '/',
+      repo: '',
+      search: 'auto',
+      subMaxLevel: 6,
+      auto2top: true,
+      coverpage: false,
+
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<p style="color:#D0D0D0"><small> 本作品采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" style="color:#D0D0D0" one-link-mark="yes">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 进行许可',
+            '<br>',
+            'Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank" style="color:#D0D0D0" one-link-mark="yes">docsify</a>.',
+            '<br>',
+            '<a href="https://beian.miit.gov.cn/" target="_blank" style="color:#D0D0D0" one-link-mark="yes">蜀ICP备20006853号-1</a>',
+            '</footer>',
+          ].join('');
+
+          hook.afterEach(function(html) {
+            return html + footer;
+         });
+        }
+      ]
+    }
+  </script>
+  <script src="//cdn.bootcdn.net/ajax/libs/docsify/4.11.6/docsify.min.js"></script>
+  <script src="//cdn.bootcdn.net/ajax/libs/docsify/4.11.6/plugins/search.min.js"></script>
+  <script src="//cdn.bootcdn.net/ajax/libs/docsify/4.11.6/plugins/zoom-image.min.js"></script>
+</body>
+</html>
